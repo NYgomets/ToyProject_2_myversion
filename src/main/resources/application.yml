@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/Cafehub
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+
+    properties:
+      hibernate:
+        format_sql: true
+
+
+logging.level:
+  org.hibernate.SQL: debug
+
+jwt:
+  secret: aBcD3FgH1JkLmN6PqR9sTuV2xYzZ4Xw7ZCXcDsf34sSDaF2KLE233fdsFWEefF325ggJK436lkGsGgkGJ9w43lk
+
+kakao:
+  restapi-key: 0ee2193a048d38e5d783af58eac76e36
+  redirect-url: http://localhost:8080/api/oauth
+
+cloud:
+  aws:
+    s3:
+      bucket: idontknow
